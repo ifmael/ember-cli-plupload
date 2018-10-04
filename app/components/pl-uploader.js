@@ -1,4 +1,4 @@
-import PlUploader from 'ember-plupload/components/pl-uploader';
+import PlUploader from 'ember-cli-plupload/components/pl-uploader';
 import config from '../config/environment';
 
 export default PlUploader.extend({

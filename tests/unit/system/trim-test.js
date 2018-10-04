@@ -1,4 +1,4 @@
-import trim from 'ember-plupload/system/trim';
+import trim from 'ember-cli-plupload/system/trim';
 import {
   module,
   test

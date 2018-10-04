@@ -4,7 +4,7 @@ import {
   test
 } from 'ember-qunit';
 import Ember from 'ember';
-import Uploader from 'ember-plupload/services/uploader';
+import Uploader from 'ember-cli-plupload/services/uploader';
 import MockUploader from '../../helpers/mock-uploader';
 
 var get = Ember.get;

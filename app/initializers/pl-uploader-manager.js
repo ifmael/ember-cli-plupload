@@ -1,5 +1,5 @@
 /*global requirejs */
-import makeFileFilter from 'ember-plupload/system/make-file-filter';
+import makeFileFilter from 'ember-cli-plupload/system/make-file-filter';
 
 var keys = Object.keys;
 

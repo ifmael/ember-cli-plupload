@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import UploadQueue from 'ember-plupload/system/upload-queue';
-import File from 'ember-plupload/system/file';
+import UploadQueue from 'ember-cli-plupload/system/upload-queue';
+import File from 'ember-cli-plupload/system/file';
 import {
   module,
   test

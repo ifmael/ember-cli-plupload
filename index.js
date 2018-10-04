@@ -8,7 +8,7 @@ const existsSync = require('exists-sync');
 const fastbootTransform = require('fastboot-transform');
 
 module.exports = {
-  name: 'ember-plupload',
+  name: 'ember-cli-plupload',
 
   included: function (app) {
     this._super.included(app);

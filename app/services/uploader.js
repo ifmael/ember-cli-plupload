@@ -1,1 +1,1 @@
-export { default } from 'ember-plupload/services/uploader';
+export { default } from 'ember-cli-plupload/services/uploader';

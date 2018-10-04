@@ -1,6 +1,6 @@
 /* global plupload */
 import Ember from 'ember';
-import UploadQueue from 'ember-plupload/system/upload-queue';
+import UploadQueue from 'ember-cli-plupload/system/upload-queue';
 import MockUploader from '../../helpers/mock-uploader';
 import {
   module,

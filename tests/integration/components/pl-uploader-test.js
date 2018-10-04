@@ -1,5 +1,5 @@
 import { moduleForComponent, test } from 'ember-qunit';
-import { addFiles } from 'ember-plupload/test-helper';
+import { addFiles } from 'ember-cli-plupload/test-helper';
 import hbs from 'htmlbars-inline-precompile';
 import Ember from 'ember';
 
