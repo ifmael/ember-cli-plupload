@@ -1,3 +1,7 @@
+# Please do not use this addon
+
+This addon is built as a temporary fix for a project that used bower based ember-plupload
+
 # {{pl-uploader}} [![Build Status](https://travis-ci.org/tim-evans/ember-plupload.svg)](https://travis-ci.org/tim-evans/ember-plupload) [![Code Climate](https://codeclimate.com/github/tim-evans/ember-plupload/badges/gpa.svg)](https://codeclimate.com/github/tim-evans/ember-plupload) [![Ember Observer Score](http://emberobserver.com/badges/ember-plupload.svg)](http://emberobserver.com/addons/ember-plupload)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/tim-evans/ember-plupload.svg)](https://greenkeeper.io/)

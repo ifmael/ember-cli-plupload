@@ -1,5 +1,5 @@
 {
-  "name": "ember-plupload",
+  "name": "ember-cli-plupload",
   "version": "1.13.21",
   "directories": {
     "doc": "doc",
@@ -11,7 +11,7 @@
     "test": "ember try:testall",
     "release": "standard-version"
   },
-  "repository": "https://github.com/tim-evans/ember-plupload",
+  "repository": "https://github.com/izelnakri/ember-cli-plupload",
   "engines": {
     "node": ">= 4"
   },
