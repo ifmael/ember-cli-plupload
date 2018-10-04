@@ -14,27 +14,21 @@ module.exports = {
     this._super.included(app);
     var config = this.app.project.config(app.env) || {};
     var addonConfig = config[this.name] || {};
-    var debugMode = addonConfig.debug;
 
-    if (debugMode === undefined) {
-      debugMode = process.env.EMBER_ENV === 'development';
-    }
-
-
-    if (debugMode) {
-      app.import('vendor/plupload/moxie.js');
-      app.import('vendor/plupload/plupload.dev.js');
+    if (addonConfig.debug || (process.env.EMBER_ENV === 'development')) {
+      app.import('vendor/plupload/js/moxie.js');
+      app.import('vendor/plupload/js/plupload.dev.js');
     } else {
-      app.import('vendor/plupload/plupload.full.min.js');
+      app.import('vendor/plupload/js/plupload.full.min.js');
     }
 
-    app.import('bower_components/plupload/js/Moxie.swf', {
+    app.import('vendor/plupload/js/Moxie.swf', {
       destDir: 'assets'
     });
-    app.import('bower_components/plupload/js/Moxie.xap', {
+    app.import('vendor/plupload/js/Moxie.xap', {
       destDir: 'assets'
     });
-    app.import('bower_components/dinosheets/dist/dinosheets.amd.js', {
+    app.import('vendor/dinosheets.amd.js', {
       exports: {
         'dinosheets': ['default']
       }
@@ -48,17 +42,6 @@ module.exports = {
 
     if (tree) {
       trees.push(tree);
-    }
-
-    const app = this._findHost();
-    let assetDir = path.join(this.project.root, app.bowerDirectory, 'plupload', 'js');
-
-    if (existsSync(assetDir)) {
-      const browserTrees = fastbootTransform(new Funnel(assetDir, {
-        files: ['moxie.js', 'plupload.dev.js', 'plupload.full.min.js'],
-        destDir: 'plupload'
-      }));
-      trees.push(browserTrees);
     }
 
     return new Merge(trees);
