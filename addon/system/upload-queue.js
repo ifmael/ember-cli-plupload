@@ -35,6 +35,8 @@ export default Ember.ArrayProxy.extend({
   queues: null,
 
   init() {
+    // this._super(...arguments);
+
     set(this, 'queues', Ember.A([]));
     set(this, 'orphanedQueues', Ember.A([]));
 
